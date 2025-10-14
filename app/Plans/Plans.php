@@ -26,6 +26,6 @@ class Plans extends PlansBase
         );
     }
     public function get(): array{
-        return $this->get_in_matrix(1);
+        return $this->get_in_matrix(3);
     }
 }
