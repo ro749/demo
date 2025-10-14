@@ -1,2 +1,2 @@
-<title>SOHO - Community Living</title>
-<link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+<title>PROPSTUDIOS - Demo</title>
+<link rel="icon" href="https://propstudios.mx/img/IconW.png" type="image/gif" sizes="16x16">
