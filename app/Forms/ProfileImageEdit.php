@@ -17,7 +17,7 @@ class ProfileImageEdit extends BaseForm
         parent::__construct(
             table: "asesors",
             submit_text: "",
-            reload: true,
+            reload: false,
             db_id: Auth::guard('asesor')->user()->id,
             fields: [
                 'pfp' => new ImageUploader(
@@ -28,14 +28,5 @@ class ProfileImageEdit extends BaseForm
                 ),
             ],
         );
-    }
-    protected static ?ProfileImageEdit $instance = null;
-
-    public static function instanciate(): ProfileImageEdit
-    {
-        if (!self::$instance) {
-            self::$instance = new self();
-        }
-        return self::$instance;
     }
 }

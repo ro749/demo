@@ -17,8 +17,8 @@
         <h4></h4>
         <h5>{{ $client->phone }}</h5>
     </div>
-    <div style="display:flex; flex-direction:row; justify-content:center;">
-        <x-smartForm :form="$form" />
+    <div style="display:flex; flex-direction:column; justify-content:center; align-items: center;">
+        <x-smartForm :form="$form" style="display:flex; flex-direction:column; justify-content:center; align-items: center; gap:1rem"/>
     </div>
     <div style="padding: 1.5rem">
     @include('sharedutils::components.tables.smartTable', ['table' => $table])

@@ -15,11 +15,11 @@ class ClientComment extends BaseForm
     {
         parent::__construct(
             table: "clients",
-            submit_text: "",
+            submit_text: "guardar",
+            reset: false,
+            success_msg: "Comentario guardado exitosamente",
             fields: [
-                'long_comment' => new TextArea(
-                    autosave: true,
-                ),
+                'long_comment' => new TextArea(),
                 'id' => new FormField(
                     type: InputType::HIDDEN,
                 ),
