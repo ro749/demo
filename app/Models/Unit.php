@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Ro749\SharedUtils\Models\Model;
 
 use Illuminate\Support\Facades\DB;
 class Unit extends Model

@@ -10,7 +10,9 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "ro749/shared-utils": "dev-main",
-        "ro749/listing-utils": "dev-main"
+        "ro749/listing-utils": "dev-main",
+        "ro749/login-template": "dev-main",
+        "ro749/full-listing-template": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -76,12 +78,20 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "vcs",
-            "url": "git@github.com:ro749/shared-utils.git"
+            "type": "path",
+            "url": "../shared-utils"
         },
         {
-            "type": "vcs",
-            "url": "git@github.com:ro749/listing-utils.git"
+            "type": "path",
+            "url": "../listing-utils"
+        },
+        {
+            "type": "path",
+            "url": "../login-template"
+        },
+        {
+            "type": "path",
+            "url": "../full-listing-template"
         }
     ]
 }

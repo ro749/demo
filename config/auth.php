@@ -24,7 +24,7 @@ return [
         ],
         'asesors' => [
             'driver' => 'eloquent',
-            'model' => App\Models\Asesor::class,
+            'model' => Ro749\FullListingTemplate\Models\Asesor::class,
         ],
         // 'users' => [
         //     'driver' => 'database',

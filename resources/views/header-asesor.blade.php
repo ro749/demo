@@ -6,7 +6,7 @@
         ['label' => 'Cerrar Sesión', 'url' => '/logout'],
     ];
     $user = Auth::guard('asesor')->user();
-    $form = App\Forms\ProfileImageEdit::instanciate();
+    $form = config('overrides.forms.ProfileImageEdit')::instanciate();
 @endphp
 
 @include('shared-utils::components.sidebar', [
