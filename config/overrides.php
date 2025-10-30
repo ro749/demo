@@ -13,5 +13,17 @@ return [
     ],
     'controllers' => [
     ],
+    'views' => [
+        'client-login' => 'client-login',
+        'disponibilidad' => 'disponibilidad',
+        'head' => 'head',
+        'header-admin' => 'header-admin',
+        'header-asesor' => 'header-asesor',
+        'header' => 'header',
+        'mail-body' => 'mail-body',
+        'simple-login' => 'simple-login',
+        'title' => 'title',
+        'unavailable' => 'unavailable',
+    ],
     'plans' => App\Plans\Plans::class,
 ];
