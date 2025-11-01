@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-@include('head')
+@include(config('overrides.views.head'))
 
 <body>
 
@@ -12,7 +12,7 @@
         </div>
         <div class="scrollbar-v show-on-scroll"></div>
         
-        @include('header')
+        @include(config('overrides.views.header'))
 
                                     <section style="background-color:#fef5e6;" class="  relative no-top no-bottom overflow-hidden">
                                         <div class="container-fluid position-relative half-fluid">
@@ -321,7 +321,7 @@
 
         
         @if(isset($asesor_area))
-        @include('asesor-area')
+        @include(config('overrides.views.asesor-area'))
         @endif
     </div>
 
@@ -386,7 +386,7 @@
     });
 </script>
 @endpush
-@include('scripts')
+@include(config('overrides.views.scripts'))
 </body>
 
 </html>

@@ -44,7 +44,7 @@
 
 
 <body>
-    @include('header-asesor')
+    @include(config('overrides.views.header-asesor'))
     <div style="display: flex; justify-content: center; align-items: center; margin-top: 2rem;">
         <div class="card login-card" style="padding:1.5rem;">
             <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 2rem;">
