@@ -8,6 +8,7 @@ return [
     'forms' => [
     ],
     'models' => [
+        'PersonalPlan' => App\Models\PersonalPlan::class,
         'Unit' => App\Models\Unit::class,
         'User' => App\Models\User::class,
     ],
@@ -25,5 +26,4 @@ return [
         'title' => 'title',
         'unavailable' => 'unavailable',
     ],
-    'plans' => App\Plans\Plans::class,
 ];

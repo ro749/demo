@@ -37,9 +37,14 @@
         .characteristic-text{
             margin:0;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 767px) {
             .imp-ui-top-right{
                 top: -20px !important;
+            }
+        }
+        @media (min-width: 767px) {
+            #plan-div-personal{
+                width: 50%;
             }
         }
         

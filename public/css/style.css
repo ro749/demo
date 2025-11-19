@@ -3854,7 +3854,6 @@ footer.footer-light h5 {
   margin-top: 0;
   font-family: var(--heading-font);
   font-weight: var(--heading-font-weight);
-  color: var(--heading-font-color);
   text-transform: var(--heading-text-transform);
 }
 
