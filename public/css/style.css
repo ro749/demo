@@ -2483,16 +2483,7 @@ header.header-light .h-phone span{
   opacity: .5;
 }
 
-.form-control {
-  padding: 10px;
-  border: solid 1px rgba(0,0,0,0.05);
-  background: rgba(0,0,0,.025);
-  border-radius:6px;
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
-}
-
-.text-light .form-control{
+.text-light{
   color: #ffffff;
   border: solid 1px rgba(255,255,255,0.2);
   background: rgba(255,255,255,.025);
