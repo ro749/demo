@@ -18,7 +18,6 @@ return [
         'client-login' => 'client-login',
         'disponibilidad' => 'disponibilidad',
         'head' => 'head',
-        'header-admin' => 'header-admin',
         'header-asesor' => 'header-asesor',
         'header' => 'header',
         'mail-body' => 'mail-body',

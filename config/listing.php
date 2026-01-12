@@ -6,7 +6,7 @@ return [
     'plans'=>[
         'personalized_plan'=>[
             'title'=>'PLAN PERSONALIZADO',
-            'final_date'=>'2027-09-30',
+            'final_date'=>'2027-11-30',
             'lines'=>[
                 [
                     'text'=>'ENGANCHE',

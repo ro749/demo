@@ -96,7 +96,7 @@
 
                         <div class="spacer-double"></div>
                     </div>
-                    @include('listing-utils::Plans.plans',['plans'=>$plans])
+                    {!! $plans->render($personal_plan) !!}
                     @if(isset($sender))
                     {!! $sender->render() !!}
                     @endif
