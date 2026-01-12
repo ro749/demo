@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'PROPSTUDIOS - Demo',
+    'icon' => 'https://propstudios.mx/img/IconW.png'
 
     /*
     |--------------------------------------------------------------------------
