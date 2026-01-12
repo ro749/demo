@@ -14,7 +14,7 @@ return [
     */
 
     'name' => 'PROPSTUDIOS - Demo',
-    'icon' => 'https://propstudios.mx/img/IconW.png'
+    'icon' => 'https://propstudios.mx/img/IconW.png',
 
     /*
     |--------------------------------------------------------------------------
