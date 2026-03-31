@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    @include('shared-utils::components.head')
-    @push('styles')
-        <style>
+<x-layout>
+    <style>
             #form-field-category{
                 width: 100% !important;
             }
@@ -38,12 +34,6 @@
             }
             
         </style>
-    @endpush
-    @stack('styles')
-</head>
-
-
-<body>
     @include(config('overrides.views.header-asesor'))
     <div style="display: flex; justify-content: center; align-items: center; margin-top: 2rem;">
         <div class="card login-card" style="padding:1.5rem;">
@@ -59,7 +49,4 @@
             <x-smartForm :form="$form_select" style="display: flex; flex-direction: column; align-items: center; gap: 6px;" />
         </div>
     </div>
-    @stack('script-includes')
-    @stack('scripts')
-</body>
-</html>
+</x-layout>

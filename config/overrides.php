@@ -22,7 +22,6 @@ return [
         'header' => 'header',
         'mail-body' => 'mail-body',
         'simple-login' => 'simple-login',
-        'title' => 'title',
         'unavailable' => 'unavailable',
     ],
 ];

@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="zxx">
-
-@include(config('overrides.views.head'))
-
-<body>
+<x-layout>
 
     <div id="wrapper">
 
@@ -96,7 +91,7 @@
 
                         <div class="spacer-double"></div>
                     </div>
-                    {!! $plans->render($personal_plan) !!}
+                    {!! $plans->render() !!}
                     @if(isset($sender))
                     {!! $sender->render() !!}
                     @endif
@@ -387,6 +382,4 @@
 </script>
 @endpush
 @include(config('overrides.views.scripts'))
-</body>
-
-</html>
+</x-layout>
