@@ -12,6 +12,8 @@ return [
         'Unit' => App\Models\Unit::class,
         'User' => App\Models\User::class,
     ],
+    'data' => [
+    ],
     'controllers' => [
     ],
     'views' => [

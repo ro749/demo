@@ -23,5 +23,6 @@ return [
                 ]
             ]
         ]
-    ]
+    ],
+    'dashboard'=>true,
 ];
