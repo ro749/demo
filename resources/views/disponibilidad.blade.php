@@ -1,5 +1,4 @@
 <x-layout>
-
     <div id="wrapper">
 
         <div class="float-text show-on-scroll">
@@ -67,11 +66,8 @@
                                     </div><br>
                                     <p class="wow fadeInUp" data-wow-delay=".6s" style="margin-bottom: 1rem !important;">Un modelo de departamento que evoca armonía y serenidad, perfecto para aquellos que buscan un hogar tranquilo y equilibrado, inspirado en la belleza minimalista.</p>
                                     
-                                    <div id="characteristics" class="relative overflow-hidden">
-                                    @include('listing-utils::characteristics',[
-                                        'icons_path'=>'https://propstudios.mx/img/Soho/Iconos/',
-                                        'icons_ext'=>'.png'
-                                    ])
+                                    <div id="characteristics-div" class="relative overflow-hidden">
+                                        <x-f-list :data="$unit" id="characteristics"/>
                                     </div>
                                                                 
                             <br>
@@ -83,18 +79,15 @@
                                              
                             <div class="col-lg-8">
                                 <div class="owl-carousel owl-theme owl-single-dots">
-                                    <x-f-image :unit="$unit" id="iso" data="modelo" src="https://propstudios.mx/img/Soho/Modelos/ISO/" ext=".png" class="w-100 wow fadeInUp" data-wow-delay=".2s" alt=""></x-f-image>
-                                    <x-f-image :unit="$unit" id="planta" data="modelo" src="https://propstudios.mx/img/Soho/Modelos/Planta/" ext=".png" class="w-100 wow fadeInUp" data-wow-delay=".2s" alt=""></x-f-image>
+                                    <x-f-image :unit="$unit" id="iso" data="modelo" src="Modelos/ISO/" ext=".png" class="w-100 wow fadeInUp" data-wow-delay=".2s" alt=""></x-f-image>
+                                    <x-f-image :unit="$unit" id="planta" data="modelo" src="Modelos/Planta/" ext=".png" class="w-100 wow fadeInUp" data-wow-delay=".2s" alt=""></x-f-image>
                                 </div>
                             </div>
                         </div>
 
                         <div class="spacer-double"></div>
                     </div>
-                    {!! $plans->render() !!}
-                    @if(isset($sender))
-                    {!! $sender->render() !!}
-                    @endif
+                    @include("full-listing-template::plans")
                 </section>
                 
 

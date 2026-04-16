@@ -12,9 +12,13 @@ return [
         'Unit' => App\Models\Unit::class,
         'User' => App\Models\User::class,
     ],
+    'data' => [
+        'UnitData' => App\Data\UnitData::class,
+    ],
     'controllers' => [
     ],
     'views' => [
+        'characteristic' => 'characteristic',
         'client-login' => 'client-login',
         'disponibilidad' => 'disponibilidad',
         'head' => 'head',

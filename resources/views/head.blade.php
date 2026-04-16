@@ -43,7 +43,7 @@
             }
         }
         @media (min-width: 767px) {
-            #plan-div-personal{
+            #plan-div-personalized{
                 width: 50%;
             }
         }

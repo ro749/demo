@@ -16,7 +16,8 @@ class TorreAdmin extends BaseTable
             'baños', 
             'cajones', 
             'vista', 
-            'price'
+            'price',
+            'status'
         ]);
     }
 }
