@@ -7,5 +7,6 @@ return [
         'personalized_plan'=>[
             'title'=>'PLAN PERSONALIZADO',
         ]
-    ]
+    ],
+    'dashboard'=>true,
 ];
