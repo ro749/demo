@@ -12,7 +12,7 @@ return [
         'Unit' => App\Models\Unit::class,
         'User' => App\Models\User::class,
     ],
-    'data' => [
+    'datas' => [
         'UnitData' => App\Data\UnitData::class,
     ],
     'controllers' => [
