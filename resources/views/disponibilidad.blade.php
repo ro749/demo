@@ -79,8 +79,8 @@
                                              
                             <div class="col-lg-8">
                                 <div class="owl-carousel owl-theme owl-single-dots">
-                                    <x-f-image :unit="$unit" id="iso" data="modelo" src="Modelos/ISO/" ext=".png" class="w-100 wow fadeInUp" data-wow-delay=".2s" alt=""></x-f-image>
-                                    <x-f-image :unit="$unit" id="planta" data="modelo" src="Modelos/Planta/" ext=".png" class="w-100 wow fadeInUp" data-wow-delay=".2s" alt=""></x-f-image>
+                                    <x-f-image :data="$unit" dif="iso" id="modelo" src="Modelos/ISO/" ext=".png" class="w-100 wow fadeInUp" data-wow-delay=".2s" alt=""/>
+                                    <x-f-image :data="$unit" dif="planta" id="modelo" src="Modelos/Planta/" ext=".png" class="w-100 wow fadeInUp" data-wow-delay=".2s" alt=""/>
                                 </div>
                             </div>
                         </div>
