@@ -1,0 +1,24 @@
+name: PR Listing Tests  # just a display name, shows in the Actions tab
+
+on:
+  pull_request:  # triggers when a PR is opened or updated
+    branches: [ main ]  # only for PRs targeting main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  
+
+    - uses: actions/checkout@v4
+
+    - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+    - name: Install dependencies
+        run: composer install --no-interaction
+        env:
+          COMPOSER_AUTH: '{"github-oauth":{"github.com":"${{ secrets.GITHUB_TOKEN }}"}}'
+
+    - name: Run checks
+        run: php artisan check
