@@ -6,7 +6,6 @@ return [
         'TorreAdmin' => App\Tables\TorreAdmin::class,
     ],
     'forms' => [
-        'TestForm' => App\Forms\TestForm::class,
     ],
     'models' => [
         'PersonalPlan' => App\Models\PersonalPlan::class,
