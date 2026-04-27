@@ -11,17 +11,6 @@ use Ro749\SharedUtils\Models\LogicModifiers\Options;
 use Ro749\FullListingTemplate\Enums\Options as OptionsEnum;
 class Unit extends Model
 {
-    static function get(string $column, string $id)
-    {
-        $unit = DB::table('units')->where($column, $id)->first();
-        $unit->characteristics = DB::table('characteristics')->select('text', 'icon')->where('model', '=', $unit->modelo)->get();
-        $unit->modelo = DB::table('models')->where('id', '=', $unit->modelo)->first()->name;
-        if ($unit->modelo == $unit->unit) {
-            $unit->unit = "";
-        }
-        return $unit;
-    }
-
     protected static function allColumns(): array
     {
         return [

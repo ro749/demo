@@ -13,15 +13,15 @@ return [
         'Unit' => App\Models\Unit::class,
         'User' => App\Models\User::class,
     ],
-    'data' => [
+    'datas' => [
+        'UnitData' => App\Data\UnitData::class,
     ],
     'controllers' => [
     ],
     'views' => [
+        'characteristic' => 'characteristic',
         'client-login' => 'client-login',
         'disponibilidad' => 'disponibilidad',
-        'head' => 'head',
-        'header-asesor' => 'header-asesor',
         'header' => 'header',
         'mail-body' => 'mail-body',
         'simple-login' => 'simple-login',

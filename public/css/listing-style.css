@@ -1,0 +1,31 @@
+#client-login{
+    #form-field-category{
+        width: 100% !important;
+    }
+    #RegisterClient{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    #SelectClient{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .title{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem !important;
+    }
+    iconify-icon {
+        font-size: 1rem;
+    }
+    
+    .btn{
+        background-color: #B07E50 !important;
+        color: #ffffff !important;
+    }
+    
+}

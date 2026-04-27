@@ -59,7 +59,14 @@ return [
             'throw' => false,
             'report' => false,
         ],
-
+        'external' => [
+            'driver' => 'local',
+            'root' => '/',
+            'url' => 'https://propstudios.mx/img/Soho/',
+            'visibility' => 'public',
+            'throw' => false,
+            'report' => false,
+        ],
     ],
 
     /*
