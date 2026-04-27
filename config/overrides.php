@@ -6,6 +6,7 @@ return [
         'TorreAdmin' => App\Tables\TorreAdmin::class,
     ],
     'forms' => [
+        'TestForm' => App\Forms\TestForm::class,
     ],
     'models' => [
         'PersonalPlan' => App\Models\PersonalPlan::class,
@@ -24,6 +25,7 @@ return [
         'header' => 'header',
         'mail-body' => 'mail-body',
         'simple-login' => 'simple-login',
+        'test' => 'test',
         'unavailable' => 'unavailable',
     ],
 ];
