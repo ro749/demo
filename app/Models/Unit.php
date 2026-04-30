@@ -11,18 +11,20 @@ use Ro749\SharedUtils\Models\LogicModifiers\Options;
 use Ro749\FullListingTemplate\Enums\Options as OptionsEnum;
 class Unit extends Model
 {
-    protected static function allColumns(): array
+    public static function allColumns(): array
     {
         return [
             'unit'=>new Column(
                 display:"Unidad",
+                modifier: null,
             ),
             'modelo'=>new Column(
                 display:"Modelo",
                 logic_modifier: new ForeignKey(
                     table: 'models',
                     column: 'name',
-                )
+                ),
+                modifier: null,
             ),
             'm2'=>new Column(
                 display:"M2",
@@ -30,15 +32,19 @@ class Unit extends Model
             ),
             'rec'=>new Column(
                 display:"Recamaras",
+                modifier: null,
             ),
             'baños'=>new Column(
                 display:"Baños",
+                modifier: null,
             ),
             'cajones'=>new Column(
                 display:"Cajones",
+                modifier: null,
             ),
             'vista'=>new Column(
                 display:"Vista",
+                modifier: null,
             ),
             'price'=>new Column(
                 display:"Precio",
@@ -47,6 +53,7 @@ class Unit extends Model
             'status'=>new Column(
                 display:"Estado",
                 logic_modifier: new Options (options: OptionsEnum::UnitsStatus),
+                modifier: null,
             ),
         ];
     }
