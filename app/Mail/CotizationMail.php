@@ -10,6 +10,7 @@ use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Models\Unit;
 class CotizationMail extends Mailable
 {
     use Queueable, SerializesModels;
@@ -40,7 +41,7 @@ class CotizationMail extends Mailable
      */
     public function content(): Content
     {
-        $unit = DB::table('units')->where('id', $this->unit)->first();
+        $unit = Unit::where('id', $this->unit)->first();
         $model = DB::table('models')->where('id', $unit->modelo)->first();
         return new Content(
             view: 'listing-utils::Sender.cotization-mail',
