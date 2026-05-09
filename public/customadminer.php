@@ -12,7 +12,7 @@ if (!$app->make('auth')->check()) {
 }
 
 function adminer_object() {
-    class AdminerCustom extends Adminer {
+    class AdminerCustom extends Adminer\Adminer {
         function credentials() {
             return [
                 $_ENV['DB_HOST'],
