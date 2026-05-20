@@ -21,6 +21,7 @@ return [
         'characteristic' => 'characteristic',
         'client-login' => 'client-login',
         'disponibilidad' => 'disponibilidad',
+        'header-admin' => 'header-admin',
         'header' => 'header',
         'mail-body' => 'mail-body',
         'simple-login' => 'simple-login',
