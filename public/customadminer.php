@@ -23,6 +23,19 @@ function adminer_object() {
         function database() {
             return $_ENV['DB_DATABASE'];
         }
+        function databases($flush = true) {
+            return [
+                'ziva',
+                'xikari', 
+                'verdant',
+                'soho',
+                'siomona',
+                'operatest',
+                'distritoterra',
+                'demo',
+                'aldeakuzamil'
+            ];
+        }
     }
     return new AdminerCustom();
 }
