@@ -6,11 +6,6 @@ $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 $request = Illuminate\Http\Request::capture();
 $kernel->handle($request);
 
-if (!$app->make('auth')->check()) {
-    header('Location: /login');
-    exit;
-}
-
 function adminer_object() {
     class AdminerCustom extends Adminer\Adminer {
         function credentials() {
