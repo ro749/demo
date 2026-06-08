@@ -8,6 +8,8 @@ return new class extends Migration
 {
     public function up(): void
     {
-        $sql = DB::table('plans')->where('id', '!=', 1)->delete();
+        Schema::table('clients', function (Blueprint $table) {
+            $table->boolean('new')->default(false);
+        });
     }
 };
