@@ -14,7 +14,6 @@
         "laravel/tinker": "^2.10.1",
         "onecentlin/laravel-adminer": "^8.0",
         "ro749/full-listing-template": "dev-main",
-        "ro749/listing-editor": "dev-main",
         "ro749/listing-utils": "dev-main",
         "ro749/login-template": "dev-main",
         "ro749/shared-utils": "dev-main"
@@ -97,10 +96,6 @@
         {
             "type": "vcs",
             "url": "git@github.com:ro749/full-listing-template.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:ro749/listing-editor.git"
         }
     ]
 }
