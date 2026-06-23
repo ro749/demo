@@ -20,7 +20,7 @@ class UnitData extends Data
 			$characteristics[] = view('characteristic', ['text' => $char->text, 'icon' => $char->icon])->render();
 		}
 		$unit->characteristics = $characteristics;
-		$unit->modelo = DB::table('models')->where('id', '=', $unit->modelo)->first()->name;
+		$unit->modelo = DB::table('models')->where('id', '=', $unit->modelo_id)->first()->name;
 		return $unit;
     }
 }
